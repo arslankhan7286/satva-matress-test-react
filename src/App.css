@@ -1,0 +1,131 @@
+/* Global CSS */
+.container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+/* Header start in css */
+.header{
+  width: 100%;
+  background: #EDEDED;
+  border-bottom: 2px solid #C1C1C1;
+}
+.header .header_items{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header_items .title{
+  font-size: 20px;
+  color: #a87272;
+}
+.header .header_items .cart-icon{
+  font-size: 35px;
+  position: relative;
+}
+.header .header_items .cart-icon span{
+  font-size: 14px;
+  color: white;
+  background: #A87272;
+  border-radius: 50%;
+  position: absolute;
+  left: 25px;
+  width: 20px;
+  text-align: center;
+  height: 20px;
+}
+
+/* Matress section start in css */
+.matress{
+  background: #EDEDED;
+  width: 100%;
+  padding: 40px 0px;
+}
+.matress .matress-gallery{
+  width: 100%;
+}
+.matress .matress-gallery img{
+  width: 100%;
+  height: 400px;
+}
+.matress .matress-selector{
+  padding-left: 30px;
+}
+.matress .matress-selector h2{
+  padding-bottom: 35px;
+    font-size: 47px;
+}
+.matress .matress-selector p{
+  font-weight: 500;
+  font-size: 22px;
+}
+.matress .matress-selector button#selector-btn{
+  /* padding: 8px 60px; */
+  width: 33%;
+  height: 52px;
+  background: white;
+  font-size: 20px;
+  border: 1px solid gray;
+  outline: none;
+}
+.matress .matress-selector .matress-price{
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+.matress .matress-selector .matress-price p{
+  font-size: 18px;
+  font-weight: 500;
+}
+.matress .matress-selector .addcart-btn button{
+  width: 100%;
+  height: 55px;
+  outline: none;
+  border: none;
+  color: white;
+  background: #A87272;
+  font-size: 20px;
+}
+.button-active {
+  background-color: #A87272 !important;
+  color: white;
+}
+.show{
+  display: flex !important;
+  justify-content: space-between;
+}
+
+.hide{
+  display: none !important;
+}
+
+/* MEDIA QUERY START IN CSS */
+
+@media(max-width: 1024px){
+  .matress .matress-selector button#selector-btn{
+    width: 100%;
+  }
+  .matress .matress-selector h2 {
+    padding-bottom: 24px;
+}
+.matress .matress-selector .matress-price {
+  padding-top: 18px;
+  padding-bottom: 0px;
+}
+}
+@media(max-width: 768px){
+  .matress .matress-selector h2 {
+    font-size: 34px;
+}
+}
+
+@media(max-width: 767px){
+  .matress .matress-selector h2 {
+    text-align: center;
+    font-size: 34px;
+}
+.matress .matress-selector .matress-price {
+  padding-bottom: 40px;
+}
+}
